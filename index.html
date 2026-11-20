@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Awareness Training — Don't Take the Bait</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>🎣 Phishing Awareness Training</h1>
+  <p class="tagline">Don't take the bait. Learn to spot, stop and report phishing.</p>
+  <nav>
+    <a href="#what">What is phishing?</a>
+    <a href="#types">Types</a>
+    <a href="#redflags">Red flags</a>
+    <a href="#habits">Do's &amp; Don'ts</a>
+    <a href="#quiz">Take the quiz</a>
+    <a href="#clicked">Clicked already?</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="what">
+  <h2>1. What is phishing?</h2>
+  <p>Phishing is a social-engineering attack where a criminal pretends to be someone you trust — your bank, your college, a delivery company, even your boss — to trick you into handing over passwords, OTPs, card details or money, or into installing malware.</p>
+  <p>It works not by breaking technology, but by exploiting human urgency: <em>"Your account will be closed in 2 hours!"</em>, <em>"You have won a prize!"</em>, <em>"Verify now or lose access!"</em></p>
+  <div class="fact-box">
+    <strong>Key fact:</strong> Most phishing messages are not addressed to you personally. They are sent to millions of people — the attacker only needs a few to take the bait.
+  </div>
+</section>
+
+<section id="types">
+  <h2>2. Types of phishing</h2>
+  <div class="cards">
+    <div class="card"><h3>📧 Email phishing</h3><p>Mass emails impersonating banks, popular services or employers, with a malicious link or attachment.</p></div>
+    <div class="card"><h3>🎯 Spear phishing</h3><p>Targeted messages that use your name, role or recent activity to look convincing. Researched just for you.</p></div>
+    <div class="card"><h3>📱 Smishing</h3><p>Phishing by SMS or WhatsApp: fake delivery updates, KYC warnings, refund links and "part-time job" offers.</p></div>
+    <div class="card"><h3>📞 Vishing</h3><p>Voice calls from fake "bank officers" or "support agents" asking for OTPs, PINs or remote-access apps.</p></div>
+    <div class="card"><h3>🪞 Clone / fake websites</h3><p>Pixel-perfect copies of real login pages. The only giveaway is usually the address bar.</p></div>
+    <div class="card"><h3>📎 Attachment phishing</h3><p>Invoices, "resumes" or PDFs that install malware or open a fake login page when opened.</p></div>
+  </div>
+</section>
+
+<section id="redflags">
+  <h2>3. Red flags — how to spot it</h2>
+  <ul class="checklist">
+    <li><strong>Urgency or threats</strong> — "act now", "account blocked", "legal action". Real organisations rarely pressure you like this.</li>
+    <li><strong>Sender address doesn't match</strong> — the name says your bank, the actual address is a random Gmail or a look-alike domain (<code>hdfc-secure-login.xyz</code>).</li>
+    <li><strong>Links that don't match</strong> — hover (or long-press) before you tap. The text says one site, the link goes somewhere else.</li>
+    <li><strong>Requests for secrets</strong> — no bank, college or company will ever ask for your password, PIN, CVV or full OTP.</li>
+    <li><strong>Too-good offers</strong> — prizes, refunds or jobs you never applied for.</li>
+    <li><strong>Generic greeting</strong> — "Dear Customer" instead of your name, plus spelling and grammar mistakes.</li>
+    <li><strong>Unexpected attachments</strong> — especially .zip, .exe, .apk or "invoice" files you weren't expecting.</li>
+  </ul>
+
+  <div class="example-box">
+    <h3>Example — spot the problems</h3>
+    <p class="fake-mail"><strong>From:</strong> SBI Bank &lt;sbi.kyc-update@gmail-secure.xyz&gt;<br>
+    <strong>Subject:</strong> URGENT!! Your account will be BLOCKED today<br><br>
+    Dear Customer, your KYC is expired. Verify your PAN and OTP immediately at the link below or your account will be closed permanently.<br>
+    <span class="fake-link">http://sbi-kyc-verify.free-site.in/login</span></p>
+    <p><strong>Problems:</strong> free email domain pretending to be a bank, threat + urgency, generic greeting, asks for an OTP, and the link is not the bank's real domain.</p>
+  </div>
+</section>
+
+<section id="habits">
+  <h2>4. Do's and Don'ts</h2>
+  <div class="two-col">
+    <div class="do">
+      <h3>✅ Do</h3>
+      <ul>
+        <li>Check the sender's full email address, not just the display name.</li>
+        <li>Hover / long-press links to preview the real destination.</li>
+        <li>Go to the official app or type the website address yourself.</li>
+        <li>Turn on two-factor authentication (2FA) everywhere you can.</li>
+        <li>Verify unusual requests through a second channel (call the person).</li>
+        <li>Report suspicious messages instead of just deleting them.</li>
+      </ul>
+    </div>
+    <div class="dont">
+      <h3>🚫 Don't</h3>
+      <ul>
+        <li>Never share OTPs, PINs, CVVs or passwords — with anyone.</li>
+        <li>Don't click links in unexpected messages about money, KYC or prizes.</li>
+        <li>Don't install apps (APK files, screen-sharing apps) a caller asks for.</li>
+        <li>Don't use the same password on multiple sites.</li>
+        <li>Don't trust a page just because it has a padlock — phishing sites have HTTPS too.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <h2>5. Test yourself — 10 questions</h2>
+  <p>Pick an answer for each scenario. You'll get instant feedback, and your score at the end.</p>
+  <div id="quiz-container"></div>
+  <button id="submit-quiz" type="button">Submit quiz</button>
+  <div id="quiz-result" aria-live="polite"></div>
+</section>
+
+<section id="clicked">
+  <h2>6. Already clicked? Act fast</h2>
+  <ol>
+    <li><strong>Disconnect</strong> — if you downloaded something, disconnect from the internet.</li>
+    <li><strong>Change the password</strong> — from a different, clean device. Then change it anywhere you reused it.</li>
+    <li><strong>Turn on / reset 2FA</strong> and sign out all other sessions.</li>
+    <li><strong>Call your bank</strong> if you entered card or banking details — block cards if needed.</li>
+    <li><strong>Report it</strong> — in India, report cyber fraud on <strong>cybercrime.gov.in</strong> or call the helpline <strong>1930</strong> immediately (speed matters for recovering money).</li>
+    <li><strong>Tell your IT team / college</strong> if it was a work or college account.</li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <p>Phishing Awareness Training — an educational project. All example messages and links on this page are fictional.</p>
+</footer>
+
+<script src="quiz.js"></script>
+</body>
+</html>
